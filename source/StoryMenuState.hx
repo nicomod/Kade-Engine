@@ -34,6 +34,7 @@ class StoryMenuState extends MusicBeatState
 			['Satin Panties', "High", "Milf"],
 			['Cocoa', 'Eggnog', 'Winter Horrorland'],
 			['Senpai', 'Roses', 'Thorns']
+			['what', 'you...', 'sad mod', 'world gone wrong', 'dimension'],
 		];
 	}
 	var curDifficulty:Int = 1;
@@ -48,6 +49,7 @@ class StoryMenuState extends MusicBeatState
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
 		['senpai', 'bf', 'gf']
+		['Character', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
@@ -360,7 +362,7 @@ class StoryMenuState extends MusicBeatState
 			var songFormat = StringTools.replace(PlayState.storyPlaylist[0], " ", "-");
 			switch (songFormat) {
 				case 'Dad-Battle': songFormat = 'Dadbattle';
-				case 'Philly-Nice': songFormat = 'Philly';
+				case 'Philly': songFormat = 'Philly';
 			}
 
 			var poop:String = Highscore.formatSong(songFormat, curDifficulty);
@@ -473,7 +475,7 @@ class StoryMenuState extends MusicBeatState
 	{
 		if(week <= weekData().length - 1 && FlxG.save.data.weekUnlocked == week)
 		{
-			weekUnlocked.push(true);
+			weekUnlocked.push(false);
 			trace('Week ' + week + ' beat (Week ' + (week + 1) + ' unlocked)');
 		}
 
