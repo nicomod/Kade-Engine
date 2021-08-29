@@ -45,21 +45,21 @@ class OutdatedSubState extends MusicBeatState
 		add(kadeLogo);
 		
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"Your Kade Engine is outdated!\nYou are on "
+			"thanks to everone to do this mod!\nYou are on "
 			+ MainMenuState.kadeEngineVer
-			+ "\nwhile the most recent version is " + needVer + "."
+			+ "\nthis engine that we do is kade engine by kade dev! " + needVer + "."
 			+ "\n\nWhat's new:\n\n"
 			+ currChanges
-			+ "\n& more changes and bugfixes in the full changelog"
-			+ "\n\nPress Space to view the full changelog and update\nor ESCAPE to ignore this",
+			+ "\nhave two weeks and other that is a secret"
+			+ "\n\nPress ESCAPE to get out of this screen",
 			32);
 
 		if (MainMenuState.nightly != "")
 			txt.text = 
 			"You are on\n"
 			+ MainMenuState.kadeEngineVer
-			+ "\nWhich is a PRE-RELEASE BUILD!"
-			+ "\n\nReport all bugs to the author of the pre-release.\nSpace/Escape ignores this.";
+			+ "\nthis is a excutable mod so... !"
+			+ "\n\nReport bug is comment!.\nSpace/Escape ignores this.";
 		
 		txt.setFormat("VCR OSD Mono", 32, FlxColor.fromRGB(200, 200, 200), CENTER);
 		txt.borderColor = FlxColor.BLACK;
