@@ -86,6 +86,7 @@ class FreeplayState extends MusicBeatState
 			switch (format) {
 				case 'Dad-Battle': format = 'Dadbattle';
 				case 'Philly-Nice': format = 'Philly';
+				case 'you die...': format = 'you...';	
 			}
 
 			var diffs = [];
