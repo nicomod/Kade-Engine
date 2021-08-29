@@ -35,6 +35,7 @@ class StoryMenuState extends MusicBeatState
 			['Cocoa', 'Eggnog', 'Winter Horrorland'],
 			['Senpai', 'Roses', 'Thorns']
 			['what', 'you die...', 'mad world', 'world gone wrong"]
+                        ['secret"]
 		];
 	}
 	var curDifficulty:Int = 1;
@@ -50,6 +51,7 @@ class StoryMenuState extends MusicBeatState
 		['parents-christmas', 'bf', 'gf'],
 		['senpai', 'bf', 'gf']
                 ['character', 'bf', 'gf']
+                ['secret', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
