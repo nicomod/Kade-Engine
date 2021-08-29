@@ -34,6 +34,7 @@ class StoryMenuState extends MusicBeatState
 			['Satin Panties', "High", "Milf"],
 			['Cocoa', 'Eggnog', 'Winter Horrorland'],
 			['Senpai', 'Roses', 'Thorns']
+			['what', 'you die...', 'mad world', 'world gone wrong"]
 		];
 	}
 	var curDifficulty:Int = 1;
@@ -48,6 +49,7 @@ class StoryMenuState extends MusicBeatState
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
 		['senpai', 'bf', 'gf']
+                ['character', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
@@ -185,7 +187,7 @@ class StoryMenuState extends MusicBeatState
 		sprDifficulty.frames = ui_tex;
 		sprDifficulty.animation.addByPrefix('easy', 'EASY');
 		sprDifficulty.animation.addByPrefix('normal', 'NORMAL');
-		sprDifficulty.animation.addByPrefix('hard', 'HARD');
+		sprDifficulty.animation.addByPrefix('hard', 'HARD')
 		sprDifficulty.animation.play('easy');
 		changeDifficulty();
 
@@ -361,6 +363,7 @@ class StoryMenuState extends MusicBeatState
 			switch (songFormat) {
 				case 'Dad-Battle': songFormat = 'Dadbattle';
 				case 'Philly-Nice': songFormat = 'Philly';
+                                case 'You-Die': songFormat = 'You...';
 			}
 
 			var poop:String = Highscore.formatSong(songFormat, curDifficulty);
