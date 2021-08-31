@@ -36,7 +36,7 @@ class StoryMenuState extends MusicBeatState
 			['Senpai', 'Roses', 'Thorns']
 			['what', 'you die...', 'mad world', 'world gone wrong"]
                         ['revenge', 'series', 'again?!', 'dimension"]
-                        ['secret"]
+                        ['secret', 'oh shit"]
 		];
 	}
 	var curDifficulty:Int = 1;
